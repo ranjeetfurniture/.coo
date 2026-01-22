@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Modular Furniture Execution | RS Ranjeet Sharma</title>
+   <link rel="stylesheet" href="Style.css">
+<!-- ================= HERO ================= -->
+<section class="modular-hero">
+  <h1 class="gold">Modular Furniture Execution</h1>
+  <p>
+    At RS Ranjeet Sharma, modular furniture is not factory-showroom work.
+    It is **measured on site, built with precision, and installed for real-life use**.
+    Every unit we execute is meant to last, align perfectly, and function smoothly for years.
+  </p>
+
+  <!-- IMAGE SLIDER -->
+  <div class="slider-wrapper">
+    <div class="slider" id="slider">
+      <img src="modular-furniture1.jpg" alt="Modular Furniture View 1">
+      <img src="modular-furniture2.jpg" alt="Modular Furniture View 2">
+      <img src="modular-furniture3.jpg" alt="Modular Furniture View 3">
+      <img src="modular-furniture4.jpg" alt="Modular Furniture View 4">
+      <img src="modular-furniture5.jpg" alt="Modular Furniture View 5">
+    </div>
+    <button class="slider-btn prev" onclick="moveSlide(-1)">‹</button>
+    <button class="slider-btn next" onclick="moveSlide(1)">›</button>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================= HOW WE EXECUTE ================= -->
+<section>
+  <h2 class="gold">How We Execute Modular Furniture On Site</h2>
+  <p>
+    We work strictly on finalized drawings or client-approved layouts.
+    Measurements are taken on site to avoid alignment issues, wall deviations,
+    and finishing errors. Materials are selected as per specification,
+    and every panel, shutter, and carcass is checked before installation.
+  </p>
+  <p>
+    Execution is done step-by-step — carpentry, alignment, hardware fitting,
+    shutter installation, and final finishing. No shortcuts. No temporary fixes.
+    Our focus is durability, clean edges, and correct functionality.
+  </p>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================= TYPES OF WORK ================= -->
+<section>
+  <h2 class="gold">Types of Modular Furniture We Execute</h2>
+
+  <div class="work-list">
+    <div class="work-box">
+      <h3>Modular Kitchens</h3>
+      <p>Functional layouts with accurate alignment, strong carcass construction,
+         smooth shutter movement, and long-lasting finishes.</p>
+    </div>
+
+    <div class="work-box">
+      <h3>Wardrobes & Storage</h3>
+      <p>Floor-to-ceiling wardrobes, sliding or hinged shutters,
+         executed with precise measurements and clean internal partitions.</p>
+    </div>
+
+    <div class="work-box">
+      <h3>TV Units & Display Cabinets</h3>
+      <p>Wall-mounted and floor-supported units designed for strength,
+         proper load handling, and clean cable management.</p>
+    </div>
+
+    <div class="work-box">
+      <h3>Bedroom Furniture</h3>
+      <p>Beds with storage, side units, and integrated furniture executed
+         to match space dimensions and daily usage needs.</p>
+    </div>
+
+    <div class="work-box">
+      <h3>Office Modular Furniture</h3>
+      <p>Workstations, storage units, and partitions executed
+         with focus on durability, accuracy, and professional finish.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section>
+  <h2 class="gold">Why Clients Choose RS for Modular Furniture</h2>
+  <ul class="why-list">
+    <li>20+ years of hands-on site execution experience</li>
+    <li>Strict work on approved drawings only</li>
+    <li>Strong focus on alignment, durability, and finish</li>
+    <li>No shortcuts, no temporary fixes</li>
+    <li>Pan-India execution with on-site supervision</li>
+  </ul>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================= EMOTIONAL CLOSE ================= -->
+<section>
+  <h2 class="gold">Built for Daily Life, Not Just Photos</h2>
+  <p>
+    Modular furniture must survive daily use — opening, closing,
+    weight, cleaning, and time. At RS Ranjeet Sharma,
+    we execute furniture that stays aligned, functional,
+    and reliable long after installation.
+  </p>
+  <p>
+    This is not showroom work.
+    This is **real furniture, built on real sites, for real people**.
+  </p>
+</section>
+
+<!-- ================= SLIDER SCRIPT ================= -->
+<script>
+let index = 0;
+const slider = document.getElementById("slider");
+const slides = slider.children.length;
+
+function moveSlide(step) {
+  index += step;
+  if (index < 0) index = slides - 1;
+  if (index >= slides) index = 0;
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+</script>
+
+</body>
+</html>

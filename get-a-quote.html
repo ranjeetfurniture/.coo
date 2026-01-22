@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get a Quote – RS</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo-wrap">
+        <img src="logo.jpg" alt="RS Furniture & Interiors Logo">
+        <div class="logo-text">
+          <span>RS • Ranjeet Sharma</span>
+          <span>Furniture & Interior Fit-Out Contractor</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="residential-projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-label">Get a Quote</div>
+      <h2 class="section-heading">Share your project details</h2>
+      <p class="section-sub">
+        Fill this quick form and attach drawings or reference images via email or WhatsApp after submission.
+      </p>
+
+      <form action="https://formspree.io/f/your-endpoint-here" method="POST">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" required>
+
+        <label for="phone">Mobile Number</label>
+        <input id="phone" name="phone" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="_replyto">
+
+        <label for="location">City / Project Location</label>
+        <input id="location" name="location" required>
+
+        <label for="type">Type of space</label>
+        <select id="type" name="type">
+          <option>Residential – Apartment</option>
+          <option>Residential – Villa / Independent house</option>
+          <option>Cafe / Bar</option>
+          <option>Office</option>
+          <option>Retail / Showroom</option>
+          <option>Other</option>
+        </select>
+
+        <label for="scope">Scope of work</label>
+        <textarea id="scope" name="scope" placeholder="Example: Modular kitchen + wardrobes + beds + POP ceiling."></textarea>
+
+        <label for="budget">Approximate budget range (optional)</label>
+        <input id="budget" name="budget" placeholder="Example: ₹5–10 lakh">
+
+        <button type="submit" class="btn-primary">Submit Inquiry</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- same footer & WhatsApp float -->
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services – RS Furniture & Interior Fit-Out</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- header -->
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-label">Services</div>
+      <h2 class="section-heading">Complete furniture & interior fit-out execution</h2>
+      <p class="section-sub">
+        RS provides end-to-end on-site execution for residential, hospitality and commercial interiors across India.
+      </p>
+
+      <div class="services-grid">
+        <a class="card" href="service-modular-kitchen.html">
+          <h3>Modular Kitchens</h3>
+          <p>Site-fitted modular kitchens with high-utility storage, branded hardware and clean finishes.</p>
+        </a>
+        <a class="card" href="service-wardrobes.html">
+          <h3>Wardrobes & Storage</h3>
+          <p>Wardrobes, walk-in closets and smart storage planned from your room sizes and user needs.</p>
+        </a>
+        <a class="card" href="service-beds.html">
+          <h3>Beds, TV Units & Sofas</h3>
+          <p>Beds, back panels, TV units and custom sofas matched to the overall interior palette.</p>
+        </a>
+        <a class="card" href="service-pop-false-ceiling.html">
+          <h3>POP & False Ceilings</h3>
+          <p>POP and gypsum ceilings with integrated lighting for homes, cafes and bars.</p>
+        </a>
+        <a class="card" href="service-tv-units-wall-paneling.html">
+          <h3>Wall Paneling & Feature Walls</h3>
+          <p>Wood, fluted and fabric panels to create strong visual highlights in living and hospitality spaces.</p>
+        </a>
+        <a class="card" href="service-complete-interiors.html">
+          <h3>Complete Interior Fit-Out</h3>
+          <p>Single-point responsibility for interiors including furniture, POP, electrical, flooring and painting.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- footer + WhatsApp -->
+
+</body>
+</html>
